@@ -14,7 +14,7 @@ app.post("/login", login)
 
 // TV Show Routes
 app.get("/shows", getShows)
-app.post("/shows", addShow)
+app.post("/shows", addShow) // we want to protect
 
 // lets us run locally without emulators:
 app.listen(3000, () => console.log(` Listening on http://localhost:3000...`))
